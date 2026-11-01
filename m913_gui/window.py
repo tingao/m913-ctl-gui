@@ -570,7 +570,7 @@ class M913Window(Adw.ApplicationWindow):
         else:
             kb = self._btn_keybinds.get(key)
             idx = self._btn_dropdowns[key].get_selected()
-            row.set_subtitle(f"\u2328 {kb}" if idx == 0 and kb else "")
+            row.set_subtitle(f"\u2328 {_format_keybind(kb)}" if idx == 0 and kb else "")
 
     # ── Button mapping handlers ──────────────────────────────────────
 
